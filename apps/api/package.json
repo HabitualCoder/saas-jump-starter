@@ -1,0 +1,25 @@
+{
+  "name": "api",
+  "version": "0.1.0",
+  "private": true,
+  "main": "dist/index.js",
+  "scripts": {
+  "dev": "ts-node-dev --respawn src/index.ts",
+  "build": "tsc",
+  "start": "node dist/index.js",
+  "lint": "eslint . --ext .ts",
+  "prisma:migrate": "prisma migrate dev --schema=prisma/schema.prisma",
+  "prisma:generate": "prisma generate --schema=prisma/schema.prisma",
+  "prisma:studio": "prisma studio --schema=prisma/schema.prisma"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.11.30",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.4.5",
+    "eslint": "^9.4.0"
+  }
+}
