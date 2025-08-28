@@ -1,5 +1,6 @@
-@import "tailwindcss/preflight";
-@import "tailwindcss/utilities";
+
+@import "@tailwindcss/postcss/base";
+@import "@tailwindcss/postcss/utilities";
 
 /* Custom properties and theme variables */
 :root {
